@@ -1,0 +1,13 @@
+{
+  "message": "Minha notificação - 3 e 5",
+  "metadata": {
+    "tipo": 3,
+    "grau": 5
+  },
+  "recipients": [
+    "usuario_3",
+    "usuario_5",
+    "grupo_1",
+    "grupo_2"
+  ]
+}
