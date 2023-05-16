@@ -5,7 +5,7 @@ import json
 
 SERVER_HOST = "localhost"
 SERVER_PORT = "9092"
-KAFKA_TOPIC = "quickstart-events"
+KAFKA_TOPIC = "notification-system-local-tests"
 
 
 def value_serializer(m): return json.dumps(m).encode('utf-8')
@@ -23,6 +23,8 @@ if __name__ == '__main__':
         "message": data['message'],
         "metadata": data['metadata'],
         "recipients": data['recipients'],
+        "senderSystem": data['senderSystem'],
+        "broadcast": data['broadcast']
     }
 
     future = producer.send(KAFKA_TOPIC, payload)
