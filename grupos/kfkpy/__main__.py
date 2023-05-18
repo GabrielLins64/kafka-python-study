@@ -24,7 +24,10 @@ if __name__ == '__main__':
         "metadata": data['metadata'],
         "recipients": data['recipients'],
         "senderSystem": data['senderSystem'],
-        "broadcast": data['broadcast']
+        "recipients": data['recipients'],
+        "emailRecipients": data['emailRecipients'],
+        "whatsappRecipients": data['whatsappRecipients'],
+        "telegramRecipients": data['telegramRecipients'],
     }
 
     future = producer.send(KAFKA_TOPIC, payload)

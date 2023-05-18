@@ -5,8 +5,8 @@
       "grauNotificacao": 4
    },
    "senderSystem": 6,
-   "recipients": [
-      "1_33"
-   ],
-   "broadcast": [2]
+   "recipients": ["1_33", "1_254", "3_33", "3_42", "3_286"],
+   "emailRecipients": ["email_1@example.com", "email_2@example.com"],
+   "whatsappRecipients": ["85912341234", "85912345678"],
+   "telegramRecipients": ["85912341234", "85912345678"]
 }
